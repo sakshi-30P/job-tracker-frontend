@@ -1,0 +1,29 @@
+.addjob-container {
+  max-width: 600px;   /* Reduced size */
+  margin: 20px auto;
+}
+
+.addjob-card {
+  border-radius: 10px;
+}
+
+.addjob-card .card-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.addjob-card .form-label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-control,
+.form-select {
+  height: 38px;    /* Smaller form controls */
+  font-size: 14px;
+}
+
+textarea.form-control {
+  height: auto;
+  font-size: 14px;
+}

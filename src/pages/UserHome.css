@@ -1,0 +1,147 @@
+.user-home-container {
+  padding: 30px 50px;
+  background: #f4f7fc;
+  min-height: 100vh;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0a66c2;
+  margin-bottom: 25px;
+}
+
+/* Search Filters */
+.search-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-filters input {
+  padding: 12px;
+  width: 230px;
+  border: 1px solid #ccd6e4;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.search-filters input:focus {
+  border-color: #0a66c2;
+  box-shadow: 0 0 5px rgba(10, 102, 194, 0.3);
+}
+
+/* Job Cards Grid */
+.job-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  padding: 10px;
+}
+
+/* Card */
+.job-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  animation: fadeIn 0.4s ease;
+  border: 1px solid #e3e9f3;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Company Logo */
+.logo-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.logo-sec img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.fake-logo {
+  width: 60px;
+  height: 60px;
+  background: #0a66c2;
+  color: white;
+  border-radius: 8px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Texts */
+.job-company {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+}
+
+.job-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a66c2;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.job-desc {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.job-loc {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Apply Button */
+.apply-btn {
+  width: 100%;
+  padding: 10px;
+  background: #0a66c2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: #004182;
+}
+
+/* No Job Text */
+.no-jobs {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #777;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
